@@ -1,9 +1,7 @@
 require('dotenv').config();
 
 const { of } = require('rxjs');
-const {
-  catchError, map, delay,
-} = require('rxjs/operators');
+const { catchError, map, delay } = require('rxjs/operators');
 
 const tweets = require('./observable');
 const { setRules } = require('./rules');
